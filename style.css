@@ -1,0 +1,107 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+html, body{
+  height: 100vh;
+  width: 100vw;
+  font-size: 1.2em;
+}
+
+html {
+  background: url(images/food.jpg) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+body {
+  font-family: "Dancing Script", sans-serif;
+  min-height: 800px;
+  position: absolute;
+}
+
+.navbar {
+  position: relative;
+  width: 100vw;
+  background-color: rgb(85, 85, 85, .9);
+  overflow: auto;
+}
+  
+.navbar a {
+  float: left;
+  padding: 24px 0px 24px 0px;
+  color: white;
+  text-decoration: none;
+  width: 33.33%;
+  text-align: center;
+}
+  
+  
+.navbar a.active {
+  background-color: #000000;
+}
+
+.center {
+  position: absolute;
+  width: 50%;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  padding: 30px;
+  overflow: auto;
+  text-align: center;
+}
+
+.center {
+  background-color: rgb(0, 0, 0, 0.9);
+  color: white;
+}
+
+.center h1 {
+  padding-bottom: 20px;
+}
+
+.home img {
+  max-width: 50vw;
+  max-height: 50vh;
+  margin-top: 50px;
+}
+.menu h2 {
+  padding-bottom: 10px;
+}
+
+.items {
+  display: grid;
+  grid-template-columns: auto auto;
+  text-align: center;
+}
+
+.items ul {
+  list-style-type: none;
+  padding: 0px 20px 20px 20px;
+}
+
+.items, .contact {
+  white-space: nowrap;
+}
+
+@media screen and (max-width: 800px) {
+  .home, .menu, .contact {
+    width: 100vw;
+  }
+
+  .home, .menu {
+    height: 50vh;
+  }
+
+  .items {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
